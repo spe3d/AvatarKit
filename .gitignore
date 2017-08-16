@@ -12,6 +12,9 @@ preview/*.png*
 frontend/*.tmproj
 
 
+opencv2.framework
+
+
 # Sparkle
 
 dsa_priv.pem
@@ -30,10 +33,11 @@ dsa_priv.pem
 *.perspective
 *.perspectivev3
 *.pbxuser
+xcuserdatad
 *.xcuserdatad
-*.xcworkspace
-*.xcworkspacedata
 *.xcuserstate
+project.xcworkspace
+!default.xcworkspace
 .LSOverride
 
 
