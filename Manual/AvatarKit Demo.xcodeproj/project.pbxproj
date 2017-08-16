@@ -12,6 +12,20 @@
 		F20B41BD1F42DDC900BDA78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20B41BB1F42DDC900BDA78B /* Main.storyboard */; };
 		F20B41BF1F42DDC900BDA78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20B41BE1F42DDC900BDA78B /* Assets.xcassets */; };
 		F20B41C21F42DDC900BDA78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20B41C01F42DDC900BDA78B /* LaunchScreen.storyboard */; };
+		F20B42091F441D2F00BDA78B /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42081F441D2F00BDA78B /* opencv2.framework */; };
+		F20B420B1F441D7C00BDA78B /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B420A1F441D7C00BDA78B /* libstdc++.tbd */; };
+		F20B420D1F441DA700BDA78B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B420C1F441DA700BDA78B /* AVFoundation.framework */; };
+		F20B420F1F441DAE00BDA78B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B420E1F441DAE00BDA78B /* Accelerate.framework */; };
+		F20B42111F441DB800BDA78B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42101F441DB800BDA78B /* AssetsLibrary.framework */; };
+		F20B42131F441DC100BDA78B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42121F441DC100BDA78B /* CoreGraphics.framework */; };
+		F20B42151F441DCA00BDA78B /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42141F441DCA00BDA78B /* CoreImage.framework */; };
+		F20B42171F441DD600BDA78B /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42161F441DD600BDA78B /* CoreMedia.framework */; };
+		F20B42191F441DDF00BDA78B /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42181F441DDF00BDA78B /* CoreVideo.framework */; };
+		F20B421B1F441DE900BDA78B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B421A1F441DE900BDA78B /* QuartzCore.framework */; };
+		F20B421E1F441E7C00BDA78B /* AvatarKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B421C1F441E7C00BDA78B /* AvatarKit.framework */; };
+		F20B421F1F441E7C00BDA78B /* HeadGeniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B421D1F441E7C00BDA78B /* HeadGeniOS.framework */; };
+		F20B42211F441F1F00BDA78B /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20B42201F441F1F00BDA78B /* SceneKit.framework */; };
+		F20B42281F44282600BDA78B /* avatar.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F20B42271F44282600BDA78B /* avatar.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +36,20 @@
 		F20B41BE1F42DDC900BDA78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20B41C11F42DDC900BDA78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F20B41C31F42DDC900BDA78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20B42081F441D2F00BDA78B /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../AvatarKit/opencv2.framework; sourceTree = "<group>"; };
+		F20B420A1F441D7C00BDA78B /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		F20B420C1F441DA700BDA78B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F20B420E1F441DAE00BDA78B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F20B42101F441DB800BDA78B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F20B42121F441DC100BDA78B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F20B42141F441DCA00BDA78B /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F20B42161F441DD600BDA78B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F20B42181F441DDF00BDA78B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F20B421A1F441DE900BDA78B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F20B421C1F441E7C00BDA78B /* AvatarKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AvatarKit.framework; path = ../AvatarKit/AvatarKit.framework; sourceTree = "<group>"; };
+		F20B421D1F441E7C00BDA78B /* HeadGeniOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HeadGeniOS.framework; path = ../AvatarKit/HeadGeniOS.framework; sourceTree = "<group>"; };
+		F20B42201F441F1F00BDA78B /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		F20B42271F44282600BDA78B /* avatar.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = avatar.scnassets; path = ../AvatarKit/AvatarKit.framework/avatar.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +57,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B42211F441F1F00BDA78B /* SceneKit.framework in Frameworks */,
+				F20B421E1F441E7C00BDA78B /* AvatarKit.framework in Frameworks */,
+				F20B421F1F441E7C00BDA78B /* HeadGeniOS.framework in Frameworks */,
+				F20B421B1F441DE900BDA78B /* QuartzCore.framework in Frameworks */,
+				F20B42191F441DDF00BDA78B /* CoreVideo.framework in Frameworks */,
+				F20B42171F441DD600BDA78B /* CoreMedia.framework in Frameworks */,
+				F20B42151F441DCA00BDA78B /* CoreImage.framework in Frameworks */,
+				F20B42131F441DC100BDA78B /* CoreGraphics.framework in Frameworks */,
+				F20B42111F441DB800BDA78B /* AssetsLibrary.framework in Frameworks */,
+				F20B420F1F441DAE00BDA78B /* Accelerate.framework in Frameworks */,
+				F20B420D1F441DA700BDA78B /* AVFoundation.framework in Frameworks */,
+				F20B420B1F441D7C00BDA78B /* libstdc++.tbd in Frameworks */,
+				F20B42091F441D2F00BDA78B /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +81,8 @@
 			children = (
 				F20B41B61F42DDC900BDA78B /* AvatarKit Demo */,
 				F20B41B51F42DDC900BDA78B /* Products */,
+				F20B42291F44284300BDA78B /* Resources */,
+				F20B42011F441C5000BDA78B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +105,34 @@
 				F20B41C31F42DDC900BDA78B /* Info.plist */,
 			);
 			path = "AvatarKit Demo";
+			sourceTree = "<group>";
+		};
+		F20B42011F441C5000BDA78B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20B42201F441F1F00BDA78B /* SceneKit.framework */,
+				F20B421C1F441E7C00BDA78B /* AvatarKit.framework */,
+				F20B421D1F441E7C00BDA78B /* HeadGeniOS.framework */,
+				F20B421A1F441DE900BDA78B /* QuartzCore.framework */,
+				F20B42181F441DDF00BDA78B /* CoreVideo.framework */,
+				F20B42161F441DD600BDA78B /* CoreMedia.framework */,
+				F20B42141F441DCA00BDA78B /* CoreImage.framework */,
+				F20B42121F441DC100BDA78B /* CoreGraphics.framework */,
+				F20B42101F441DB800BDA78B /* AssetsLibrary.framework */,
+				F20B420E1F441DAE00BDA78B /* Accelerate.framework */,
+				F20B420C1F441DA700BDA78B /* AVFoundation.framework */,
+				F20B420A1F441D7C00BDA78B /* libstdc++.tbd */,
+				F20B42081F441D2F00BDA78B /* opencv2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F20B42291F44284300BDA78B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F20B42271F44282600BDA78B /* avatar.scnassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20B42281F44282600BDA78B /* avatar.scnassets in Resources */,
 				F20B41C21F42DDC900BDA78B /* LaunchScreen.storyboard in Resources */,
 				F20B41BF1F42DDC900BDA78B /* Assets.xcassets in Resources */,
 				F20B41BD1F42DDC900BDA78B /* Main.storyboard in Resources */,
@@ -262,8 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SJZ9Z68RJP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../AvatarKit",
+				);
 				INFOPLIST_FILE = "AvatarKit Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.spe3d.AvatarKit-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -275,8 +352,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SJZ9Z68RJP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../AvatarKit",
+				);
 				INFOPLIST_FILE = "AvatarKit Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.spe3d.AvatarKit-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -302,6 +384,7 @@
 				F20B41C81F42DDC900BDA78B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
