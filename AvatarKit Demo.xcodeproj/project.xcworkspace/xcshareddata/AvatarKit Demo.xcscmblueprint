@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2F5DC0B7E10F695FC3A5E4B9F86BC633DEB9C67C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2F5DC0B7E10F695FC3A5E4B9F86BC633DEB9C67C" : 9223372036854775807,
+    "DFA5771E262BBA9C0A7CFE544401F3957C38FE27" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F71CEC18-F98B-406A-975B-B14B7DF7286B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2F5DC0B7E10F695FC3A5E4B9F86BC633DEB9C67C" : "Demo\/",
+    "DFA5771E262BBA9C0A7CFE544401F3957C38FE27" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AvatarKit Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AvatarKit Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:spe3d\/AvatarKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F5DC0B7E10F695FC3A5E4B9F86BC633DEB9C67C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:spe3d\/AvatarKit-Dev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DFA5771E262BBA9C0A7CFE544401F3957C38FE27"
+    }
+  ]
+}
