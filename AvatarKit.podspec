@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     s.requires_arc = true
     s.framework = "SceneKit", "UIKit"
 
-    s.vendored_frameworks = "AvatarKit/*.framework"
+    s.vendored_frameworks = ["AvatarKit/AvatarKit.framework", "AvatarKit/HeadGeniOS.framework"]
     s.dependency 'SSZipArchive', '~> 1.7.0'
     s.dependency 'OpenCV', '~> 3.1.0'
 end
