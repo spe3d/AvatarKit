@@ -1,3 +1,27 @@
-PODFILE CHECKSUM: b2b77a051ea2ba55abf99975536047d79109c4ad
+PODS:
+  - AvatarKit (3.0.0):
+    - OpenCV (~> 3.1.0)
+    - SSZipArchive (~> 1.7.0)
+  - OpenCV (3.1.0.1)
+  - SSZipArchive (1.7)
+
+DEPENDENCIES:
+  - AvatarKit (from `git@github.com:spe3d/AvatarKit.git`)
+
+EXTERNAL SOURCES:
+  AvatarKit:
+    :git: git@github.com:spe3d/AvatarKit.git
+
+CHECKOUT OPTIONS:
+  AvatarKit:
+    :commit: 17e6a9ba72a8d0bc9efba3f2ef9e8d002f77dccf
+    :git: git@github.com:spe3d/AvatarKit.git
+
+SPEC CHECKSUMS:
+  AvatarKit: b9e30e4d1aba49fba151d137ea03561e6b6c1af3
+  OpenCV: 41c4250e2b06a394d6fbb634b5fa622cdd846018
+  SSZipArchive: 63f8e11cfcc33e03e4cd666b4359ea8bd6facd0c
+
+PODFILE CHECKSUM: 0c80382d5adb3515d6a9ac6f22abccea0d0f54fd
 
 COCOAPODS: 1.2.1

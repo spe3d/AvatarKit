@@ -6,5 +6,6 @@ target 'AvatarKit Demo' do
   use_frameworks!
 
   # Pods for AvatarKit Demo
+  pod 'AvatarKit', :git => 'git@github.com:spe3d/AvatarKit.git'
 
 end
