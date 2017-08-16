@@ -1,0 +1,6 @@
+framework module HeadGeniOS {
+  umbrella header "HeadGeniOS.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module AvatarKit {
+  umbrella header "AvatarKit.h"
+
+  export *
+  module * { export * }
+}
