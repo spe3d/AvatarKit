@@ -27,6 +27,6 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = ["AvatarKit/AvatarKit.framework", "AvatarKit/HeadGeniOS.framework"]
     s.resource = 'AvatarKit/AvatarKit.framework/*.scnassets'
 
-    s.dependency 'SSZipArchive', '~> 1.7.0'
+    s.dependency 'SSZipArchive', '~> 2.4.0'
     s.dependency 'OpenCV', '~> 3.1.0'
 end
