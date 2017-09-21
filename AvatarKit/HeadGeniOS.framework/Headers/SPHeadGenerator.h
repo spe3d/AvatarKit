@@ -11,13 +11,21 @@
 #import "DataStructure.h"
 
 typedef NS_ENUM(NSInteger, SPGender) {
-    Male = 0,
-    Female = 1
+    SPGenderMale = 0,
+    SPGenderFemale = 1
 };
 
 @interface SPHeadGenerator : NSObject
 
--(instancetype) init;
--(SPHeadModel *) generateHeadModel:(UIImage *) image
-                            gender:(SPGender) gender;
+-(nonnull instancetype)init;
+
+- (nullable NSArray<NSValue *> *)generateLandmarks:(nonnull UIImage *)image;
+
+- (nullable SPHeadModel *)generateHeadModel:(nonnull UIImage *)image
+                                  landmarks:(nonnull NSArray<NSValue *> *)landmarks
+                                     gender:(SPGender)gender;
+
+-(nullable SPHeadModel *)generateHeadModel:(nonnull UIImage *)image
+                                    gender:(SPGender)gender;
+
 @end
