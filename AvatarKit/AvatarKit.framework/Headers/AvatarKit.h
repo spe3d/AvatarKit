@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import <AvatarKit/AVKAvatarCreator.h>
+#import <AvatarKit/AVKAvatarController.h>
 #import <AvatarKit/AVKGender.h>
+#import <AvatarKit/AVKPreset.h>
 #import <AvatarKit/AVKPresetType.h>
 
 @interface AvatarKit : NSObject
