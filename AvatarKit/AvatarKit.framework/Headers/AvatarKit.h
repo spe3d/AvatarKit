@@ -31,7 +31,8 @@
  The recommended way to install `AvatarKit` into your APP is to place a call to `+startWithAPIKey:` in your `-application:didFinishLaunchingWithOptions:` or `-applicationDidFinishLaunching:` method.
  
  @param apiKey The AvatarKit API Key for this app
+ @param betaMode The AvatarKit use beta version on server.
  */
-+ (void)startWithAPIKey:(nonnull NSString *)apiKey;
++ (void)startWithAPIKey:(nonnull NSString *)apiKey onBetaServer:(BOOL)betaMode;
 
 @end
