@@ -27,6 +27,8 @@ typedef void(^AVKImageDownloadedBlock)(AVKPreset * _Nonnull preset, NSError * _N
 
 - (nonnull instancetype)initWithType:(AVKPresetType)type gender:(AVKGender)gender downloadPreviewIfNeeded:(BOOL)isNeeded;
 
++ (nonnull NSArray<AVKPreset *> *)getPresetsForType:(AVKPresetType)type gender:(AVKGender)gender NS_SWIFT_NAME(getPresets(for:gender:));
+
 + (nonnull NSArray<AVKPreset *> *)getPresetsForTypes:(AVKPresetTypes)type gender:(AVKGender)gender NS_SWIFT_NAME(getPresets(for:gender:));
 
 - (void)observeDownloadedPreviewImage:(nonnull AVKImageDownloadedBlock)block;
