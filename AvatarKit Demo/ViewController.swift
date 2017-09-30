@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  AvatarKit Demo
 //
-//  Created by Hao Lee on 2017/8/15.
+//  Created by Hao Lee on 2017/6/22.
 //  Copyright © 2017年 Speed 3D Inc. All rights reserved.
 //
 

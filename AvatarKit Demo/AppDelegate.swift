@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  AvatarKit Demo
 //
-//  Created by Hao Lee on 2017/8/15.
+//  Created by Hao Lee on 2017/6/22.
 //  Copyright © 2017年 Speed 3D Inc. All rights reserved.
 //
 
@@ -16,9 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         
-        AvatarKit.start(withAPIKey: "")
+        AvatarKit.start(withAPIKey: "14b453bec89d43069c49e04cefc0dd06", onBetaServer: true)
         
         return true
     }

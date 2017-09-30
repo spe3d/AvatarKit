@@ -13,6 +13,10 @@
 		F20B41F51F44167800BDA78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20B41F31F44167800BDA78B /* Main.storyboard */; };
 		F20B41F71F44167800BDA78B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20B41F61F44167800BDA78B /* Assets.xcassets */; };
 		F20B41FA1F44167800BDA78B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20B41F81F44167800BDA78B /* LaunchScreen.storyboard */; };
+		F269F7201F7FA56A008F1751 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269F71C1F7FA56A008F1751 /* AvatarViewController.swift */; };
+		F269F7211F7FA56A008F1751 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269F71D1F7FA56A008F1751 /* CameraViewController.swift */; };
+		F269F7221F7FA56A008F1751 /* PresetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269F71E1F7FA56A008F1751 /* PresetTableViewController.swift */; };
+		F269F7231F7FA56A008F1751 /* SPEImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F269F71F1F7FA56A008F1751 /* SPEImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F20B41F61F44167800BDA78B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F20B41F91F44167800BDA78B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F20B41FB1F44167800BDA78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F269F71C1F7FA56A008F1751 /* AvatarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		F269F71D1F7FA56A008F1751 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		F269F71E1F7FA56A008F1751 /* PresetTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetTableViewController.swift; sourceTree = "<group>"; };
+		F269F71F1F7FA56A008F1751 /* SPEImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPEImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				F20B41EF1F44167800BDA78B /* AppDelegate.swift */,
+				F269F71F1F7FA56A008F1751 /* SPEImage.swift */,
 				F20B41F11F44167800BDA78B /* ViewController.swift */,
+				F269F71C1F7FA56A008F1751 /* AvatarViewController.swift */,
+				F269F71D1F7FA56A008F1751 /* CameraViewController.swift */,
+				F269F71E1F7FA56A008F1751 /* PresetTableViewController.swift */,
 				F20B41F31F44167800BDA78B /* Main.storyboard */,
 				F20B41F61F44167800BDA78B /* Assets.xcassets */,
 				F20B41F81F44167800BDA78B /* LaunchScreen.storyboard */,
@@ -166,9 +178,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvatarKit Demo/Pods-AvatarKit Demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -181,9 +198,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AvatarKit Demo/Pods-AvatarKit Demo-resources.sh",
+				"${PODS_ROOT}/AvatarKit/AvatarKit/AvatarKit.framework/avatar.scnassets",
+				"${PODS_ROOT}/AvatarKit/AvatarKit/HeadGeniOS.framework/HeadGeniOSBundle.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -196,13 +217,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AvatarKit Demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -212,8 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F269F7231F7FA56A008F1751 /* SPEImage.swift in Sources */,
 				F20B41F21F44167800BDA78B /* ViewController.swift in Sources */,
+				F269F7211F7FA56A008F1751 /* CameraViewController.swift in Sources */,
 				F20B41F01F44167800BDA78B /* AppDelegate.swift in Sources */,
+				F269F7221F7FA56A008F1751 /* PresetTableViewController.swift in Sources */,
+				F269F7201F7FA56A008F1751 /* AvatarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

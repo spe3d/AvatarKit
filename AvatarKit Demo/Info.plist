@@ -31,8 +31,12 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>to take a selfie</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>to use your selfie</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>to save your origin face photo</string>
 </dict>
 </plist>
