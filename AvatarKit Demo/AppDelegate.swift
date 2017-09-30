@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        AvatarKit.start(withAPIKey: "14b453bec89d43069c49e04cefc0dd06", onBetaServer: true)
+        AvatarKit.start(withAPIKey: "14b453bec89d43069c49e04cefc0dd06")
         
         return true
     }
