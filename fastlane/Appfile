@@ -1,0 +1,3 @@
+apple_id ENV['IOS_USER_ID'] # Your Apple email address
+
+team_id ENV['IOS_TEAM_ID'] # Developer Portal Team ID
