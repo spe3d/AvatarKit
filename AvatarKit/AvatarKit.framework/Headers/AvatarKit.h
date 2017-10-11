@@ -27,6 +27,8 @@
 //! The AvatarKit API Key for this app
 @property(nonatomic, strong, readonly, nullable) NSString *APIKey;
 
+- (nonnull instancetype)init __unavailable;
+
 /**
  The recommended way to install `AvatarKit` into your APP is to place a call to `+startWithAPIKey:` in your `-application:didFinishLaunchingWithOptions:` or `-applicationDidFinishLaunching:` method.
  
