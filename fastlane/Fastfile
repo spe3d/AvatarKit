@@ -28,7 +28,7 @@ platform :ios do
 
     desc "build AvatarKit Demo"
     lane :build do
-        tagName = sh("git describe --abbrev=0")
+        tagName = sh("git describe --abbrev=0 --tags")
         sh("git checkout " + tagName)
 
         cocoapods(
