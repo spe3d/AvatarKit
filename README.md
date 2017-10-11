@@ -1,4 +1,5 @@
 # AvatarKit
+[![Build Status](http://internal.spe3d.co:4000/buildStatus/icon?job=AvatarKit-Release-Final)](http://internal.spe3d.co:4000/job/AvatarKit-Release-Final)
 
 AvatarKit is built in the form of framework, that uses the SceneKit.
 AvatarKit framework is built as an universal framework, that means you can use the same binary on both the simulator and device.
