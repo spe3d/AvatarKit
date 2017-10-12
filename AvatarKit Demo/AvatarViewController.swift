@@ -154,7 +154,7 @@ class AvatarViewController: ViewController {
             return
         }
         
-        controller.gender = .male
+        controller.gender = self.gender
         controller.presetType = .hair
         controller.selectPresetClosure = {(preset) -> Void in
             let hud = MBProgressHUD(view: self.view)
@@ -185,7 +185,7 @@ class AvatarViewController: ViewController {
             return
         }
         
-        controller.gender = .male
+        controller.gender = self.gender
         controller.presetType = .suit
         controller.selectPresetClosure = {(preset) -> Void in
             let hud = MBProgressHUD(view: self.view)
@@ -216,7 +216,7 @@ class AvatarViewController: ViewController {
             return
         }
         
-        controller.gender = .male
+        controller.gender = self.gender
         controller.presetType = .motion
         controller.selectPresetClosure = {(preset) -> Void in
             let hud = MBProgressHUD(view: self.view)
@@ -247,7 +247,7 @@ class AvatarViewController: ViewController {
             return
         }
         
-        controller.gender = .male
+        controller.gender = self.gender
         controller.presetType = .accessory
         controller.selectPresetClosure = {(preset) -> Void in
             let hud = MBProgressHUD(view: self.view)
