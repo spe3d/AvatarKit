@@ -1,5 +1,7 @@
 # AvatarKit
 [![Build Status](http://internal.spe3d.co:4000/buildStatus/icon?job=AvatarKit-Release-Final)](http://internal.spe3d.co:4000/job/AvatarKit-Release-Final)
+[![CocoaPods](https://img.shields.io/cocoapods/v/AvatarKit.svg)](http://cocoapods.org/?q=AvatarKit)
+[![CocoaPods](https://img.shields.io/cocoapods/p/AvatarKit.svg)](https://github.com/spe3d/AvatarKit)
 
 AvatarKit is built in the form of framework, that uses the SceneKit.
 AvatarKit framework is built as an universal framework, that means you can use the same binary on both the simulator and device.
