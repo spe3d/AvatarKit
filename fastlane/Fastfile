@@ -31,9 +31,7 @@ platform :ios do
         tagName = sh("git describe --abbrev=0 --tags")
         sh("git checkout " + tagName)
 
-        cocoapods(
-            repo_update: true,
-        )
+        cocoapods
 
         xcodebuild(
             scheme: "AvatarKit Demo",
