@@ -1,5 +1,6 @@
 # AvatarKit
 [![Build Status](http://internal.spe3d.co:4000/buildStatus/icon?job=AvatarKit-Release-Final)](http://internal.spe3d.co:4000/job/AvatarKit-Release-Final)
+[![Documentation](docs/badge.svg)](http://www.spe3d.co/AvatarKit/)
 [![CocoaPods](https://img.shields.io/cocoapods/v/AvatarKit.svg)](http://cocoapods.org/?q=AvatarKit)
 [![CocoaPods](https://img.shields.io/cocoapods/p/AvatarKit.svg)](https://github.com/spe3d/AvatarKit)
 
