@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">AvatarKit Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/spe3d/AvatarKit"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">AvatarKit Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/AVKAvatarController.html">AVKAvatarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AVKAvatarCreator.html">AVKAvatarCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AVKPreset.html">AVKPreset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AvatarKit.html">AvatarKit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/AVKGender.html">AVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AVKPresetType.html">AVKPresetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/AVKPresetTypes.html">AVKPresetTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Type Definitions.html#/c:AVKPreset.h@T@AVKImageDownloadedBlock">AVKImageDownloadedBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@NSStringFromAVKGender">NSStringFromAVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Functions.html#/c:@F@NSStringFromAVKPresetType">NSStringFromAVKPresetType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController"></a>
+                    <a name="//apple_ref/objc/Class/AVKAvatarController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController">AVKAvatarController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code>AVKAvatarController</code> class has a node of the avatar on a scene graph.
+You have to show the avatar, you need to add <code>sceneNode</code> in your scene.
+To modify style on the avatar, use methods of <code>AVKAvatarController</code> can immediately to update on the <code>sceneNode</code>.</p>
+
+<p>Save an Avatar</p>
+
+<p>AvatarKit provides to save an avatar to a file.
+<code>AVKAvatarController</code> class support the <code>NSSecureCoding</code> protocol.
+Use the <code>NSKeyedArchiver</code> class to serialize an avatar and all its contents, and the <code>NSKeyedUnarchiver</code> class to load an archived avatar.</p>
+
+                        <a href="Classes/AVKAvatarController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AVKAvatarController</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">AVKAvatarController</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarCreator"></a>
+                    <a name="//apple_ref/objc/Class/AVKAvatarCreator" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarCreator">AVKAvatarCreator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An <code>AVKAvatarCreator</code> object lets you create a scene node, including a avatar.
+An avatar creator is usually your first interaction with the scene node.</p>
+
+                        <a href="Classes/AVKAvatarCreator.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AVKAvatarCreator</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">AVKAvatarCreator</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKPreset"></a>
+                    <a name="//apple_ref/objc/Class/AVKPreset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKPreset">AVKPreset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>AVKPreset</code> includes clothes or body language.
+You can use this object for your avatar to apply styles.</p>
+
+                        <a href="Classes/AVKPreset.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AVKPreset</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">AVKPreset</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AvatarKit"></a>
+                    <a name="//apple_ref/objc/Class/AvatarKit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AvatarKit">AvatarKit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AvatarKit Base. Handles configuration and initialization of AvatarKit.</p>
+
+                        <a href="Classes/AvatarKit.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AvatarKit</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kt">AvatarKit</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="http://www.spe3d.co" target="_blank" rel="external">spe3d</a>. All rights reserved. (Last updated: 2017-10-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

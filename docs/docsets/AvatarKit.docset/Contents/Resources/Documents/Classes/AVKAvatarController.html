@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AVKAvatarController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/AVKAvatarController" class="dashAnchor"></a>
+    <a title="AVKAvatarController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AvatarKit Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/spe3d/AvatarKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AvatarKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AVKAvatarController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AVKAvatarController.html">AVKAvatarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AVKAvatarCreator.html">AVKAvatarCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AVKPreset.html">AVKPreset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarKit.html">AvatarKit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AVKGender.html">AVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AVKPresetType.html">AVKPresetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AVKPresetTypes.html">AVKPresetTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:AVKPreset.h@T@AVKImageDownloadedBlock">AVKImageDownloadedBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NSStringFromAVKGender">NSStringFromAVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NSStringFromAVKPresetType">NSStringFromAVKPresetType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AVKAvatarController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AVKAvatarController</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSSecureCoding</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>An <code>AVKAvatarController</code> class has a node of the avatar on a scene graph.
+You have to show the avatar, you need to add <code>sceneNode</code> in your scene.
+To modify style on the avatar, use methods of <code>AVKAvatarController</code> can immediately to update on the <code>sceneNode</code>.</p>
+
+<p>Save an Avatar</p>
+
+<p>AvatarKit provides to save an avatar to a file.
+<code>AVKAvatarController</code> class support the <code>NSSecureCoding</code> protocol.
+Use the <code>NSKeyedArchiver</code> class to serialize an avatar and all its contents, and the <code>NSKeyedUnarchiver</code> class to load an archived avatar.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(py)avatarGender"></a>
+                    <a name="//apple_ref/objc/Property/avatarGender" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(py)avatarGender">avatarGender</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The gender of avatar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/AVKGender.html">AVKGender</a></span> <span class="n">avatarGender</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">avatarGender</span><span class="p">:</span> <span class="kt"><a href="../Enums/AVKGender.html">AVKGender</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(py)version"></a>
+                    <a name="//apple_ref/objc/Property/version" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(py)version">version</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The version of avatar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSInteger</span> <span class="n">version</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(py)isWornPresets"></a>
+                    <a name="//apple_ref/objc/Property/isWornPresets" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(py)isWornPresets">isWornPresets</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a Boolean value indicating whether the scene node wears preset.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">isWornPresets</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">isWornPresets</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(py)sceneNode"></a>
+                    <a name="//apple_ref/objc/Property/sceneNode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(py)sceneNode">sceneNode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The node of the avatar on the scene graph.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span> <span class="n">SCNNode</span> <span class="o">*</span><span class="n">sceneNode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">sceneNode</span><span class="p">:</span> <span class="kt">SCNNode</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(cpy)defaultCameraNode"></a>
+                    <a name="//apple_ref/objc/Property/defaultCameraNode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(cpy)defaultCameraNode">defaultCameraNode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The camera can take full the avatar. Let <code>SCNView</code> displays your avatar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span>
+    <span class="n">SCNNode</span> <span class="o">*</span><span class="n">defaultCameraNode</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="k">var</span> <span class="nv">defaultCameraNode</span><span class="p">:</span> <span class="kt">SCNNode</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)initWithGenderOfDefaultAvatar:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithGenderOfDefaultAvatar:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)initWithGenderOfDefaultAvatar:">-initWithGenderOfDefaultAvatar:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a default avatar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithGenderOfDefaultAvatar</span><span class="p">:(</span><span class="n"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">)</span><span class="nv">gender</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="n">genderOfDefaultAvatar</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gender of default avatar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A default Avatar Controller object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)observeAvatarHasWornPresets:"></a>
+                    <a name="//apple_ref/objc/Method/-observeAvatarHasWornPresets:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)observeAvatarHasWornPresets:">-observeAvatarHasWornPresets:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an observe handler for wears on this avatar.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">observeAvatarHasWornPresets</span><span class="p">:</span>
+    <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nonnull</span><span class="p">)(</span><span class="n">SCNNode</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">completed</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">observeAvatarHasWornPresets</span><span class="p">(</span><span class="n">_</span> <span class="nv">completed</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">SCNNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completed</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A block which is called to have worn clothes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)setSuit:completionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-setSuit:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)setSuit:completionHandler:">-setSuit:completionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let this avatar wears a suit, coat, shirt and so on.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setSuit</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/AVKPreset.html">AVKPreset</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">suit</span>
+    <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setSuit</span><span class="p">(</span><span class="n">_</span> <span class="nv">suit</span><span class="p">:</span> <span class="kt"><a href="../Classes/AVKPreset.html">AVKPreset</a></span><span class="p">,</span> <span class="n">completionHandler</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>suit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Select your want to wear clothes that from <code><a href="../Classes/AVKPreset.html#/c:objc(cs)AVKPreset(cm)getPresetsForType:gender:">+[AVKPreset getPresetsForType:gender:]</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification the avatar has worn clothes. If <code>error</code> isn&rsquo;t <code>nil</code> when the avatar cannot wear clothes.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)setMotion:completionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-setMotion:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)setMotion:completionHandler:">-setMotion:completionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let this avatar has a motion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setMotion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/AVKPreset.html">AVKPreset</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">motion</span>
+    <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setMotion</span><span class="p">(</span><span class="n">_</span> <span class="nv">motion</span><span class="p">:</span> <span class="kt"><a href="../Classes/AVKPreset.html">AVKPreset</a></span><span class="p">,</span> <span class="n">completionHandler</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>motion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Select your want motion that from <code><a href="../Classes/AVKPreset.html#/c:objc(cs)AVKPreset(cm)getPresetsForType:gender:">+[AVKPreset getPresetsForType:gender:]</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification the avatar has motion. If <code>error</code> isn&rsquo;t <code>nil</code> when the avatar cannot use motion.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)setHair:completionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-setHair:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)setHair:completionHandler:">-setHair:completionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let this avatar designs hairstyle.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setHair</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/AVKPreset.html">AVKPreset</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">hair</span>
+    <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setHair</span><span class="p">(</span><span class="n">_</span> <span class="nv">hair</span><span class="p">:</span> <span class="kt"><a href="../Classes/AVKPreset.html">AVKPreset</a></span><span class="p">,</span> <span class="n">completionHandler</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hair</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Select your want to design hairstyle that from <code><a href="../Classes/AVKPreset.html#/c:objc(cs)AVKPreset(cm)getPresetsForType:gender:">+[AVKPreset getPresetsForType:gender:]</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification the avatar has designed hairstyle. If <code>error</code> isn&rsquo;t <code>nil</code> when the avatar cannot design hairstyle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)setAccessory:completionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/-setAccessory:completionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)setAccessory:completionHandler:">-setAccessory:completionHandler:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let this avatar wears an accessory.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setAccessory</span><span class="p">:(</span><span class="n">nullable</span> <span class="n"><a href="../Classes/AVKPreset.html">AVKPreset</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">accessory</span>
+    <span class="nf">completionHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">BOOL</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">))</span><span class="nv">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setAccessory</span><span class="p">(</span><span class="n">_</span> <span class="nv">accessory</span><span class="p">:</span> <span class="kt"><a href="../Classes/AVKPreset.html">AVKPreset</a></span><span class="p">?,</span> <span class="n">completionHandler</span> <span class="nv">block</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>accessory</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Select your want to wear accessory that from <code><a href="../Classes/AVKPreset.html#/c:objc(cs)AVKPreset(cm)getPresetsForType:gender:">+[AVKPreset getPresetsForType:gender:]</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Notification the avatar has worn accessory. If <code>error</code> isn&rsquo;t <code>nil</code> when the avatar cannot wear accessory.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarController(im)setFacialWithWeights:"></a>
+                    <a name="//apple_ref/objc/Method/-setFacialWithWeights:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarController(im)setFacialWithWeights:">-setFacialWithWeights:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Changes facial at the avatar.
+We have more basic facial, the respective <code>weights</code> into the array where you can make the avatar show different facials.
+The <code>weights</code> range is 0-1.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setFacialWithWeights</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">weights</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setFacialWithWeights</span><span class="p">(</span><span class="n">_</span> <span class="nv">weights</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSNumber</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="http://www.spe3d.co" target="_blank" rel="external">spe3d</a>. All rights reserved. (Last updated: 2017-10-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

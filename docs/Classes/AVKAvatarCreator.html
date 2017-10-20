@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AVKAvatarCreator Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/AVKAvatarCreator" class="dashAnchor"></a>
+    <a title="AVKAvatarCreator Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AvatarKit Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/spe3d/AvatarKit"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AvatarKit Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AVKAvatarCreator Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AVKAvatarController.html">AVKAvatarController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AVKAvatarCreator.html">AVKAvatarCreator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AVKPreset.html">AVKPreset</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AvatarKit.html">AvatarKit</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AVKGender.html">AVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AVKPresetType.html">AVKPresetType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AVKPresetTypes.html">AVKPresetTypes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Type Definitions.html">Type Definitions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Type Definitions.html#/c:AVKPreset.h@T@AVKImageDownloadedBlock">AVKImageDownloadedBlock</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NSStringFromAVKGender">NSStringFromAVKGender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/c:@F@NSStringFromAVKPresetType">NSStringFromAVKPresetType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AVKAvatarCreator</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">AVKAvatarCreator</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>An <code>AVKAvatarCreator</code> object lets you create a scene node, including a avatar.
+An avatar creator is usually your first interaction with the scene node.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarCreator(im)getLandmarksWithFaceImage:successBlock:failureBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-getLandmarksWithFaceImage:successBlock:failureBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarCreator(im)getLandmarksWithFaceImage:successBlock:failureBlock:">-getLandmarksWithFaceImage:successBlock:failureBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use an image to create the landmarks for the face. And get the landmark information.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">getLandmarksWithFaceImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">faceImage</span>
+                     <span class="nf">successBlock</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span>
+                                      <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSValue</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">success</span>
+                     <span class="n">failureBlock</span><span class="o">:</span><span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">getLandmarksWithFace</span><span class="p">(</span><span class="n">_</span> <span class="nv">faceImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="n">successBlock</span> <span class="nv">success</span><span class="p">:</span> <span class="p">(([</span><span class="kt">NSValue</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="n">failureBlock</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>faceImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image must contain a face. This face to occupy 80% of the image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute after the landmarks get. The block has no return value. The block will be passed an <code>NSArray</code> object containing <code>NSValue</code> objects which contain <code>CGPoint</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute failure. The block will be passed an <code>NSError</code> object if the landmarks could not be created.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarCreator(im)createAvatarWithGender:faceImage:successBlock:failureBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-createAvatarWithGender:faceImage:successBlock:failureBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarCreator(im)createAvatarWithGender:faceImage:successBlock:failureBlock:">-createAvatarWithGender:faceImage:successBlock:failureBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uploads image of face, that creates the avatar node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createAvatarWithGender</span><span class="p">:(</span><span class="n"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">)</span><span class="nv">gender</span>
+                     <span class="nf">faceImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">faceImage</span>
+                  <span class="nf">successBlock</span><span class="p">:</span>
+                      <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n"><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">success</span>
+                  <span class="nf">failureBlock</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createAvatar</span><span class="p">(</span><span class="n">with</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">,</span> <span class="n">face</span> <span class="nv">faceImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="n">successBlock</span> <span class="nv">success</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="n">failureBlock</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gender of avatar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>faceImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image must contain a face. This face to occupy 80% of the image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute after the avatar get. The block has no return value. The block will be passed an <code><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute failure. The block will be passed an <code>NSError</code> object if the avatar could not be created.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)AVKAvatarCreator(im)createAvatarWithGender:faceImage:fixLandmarks:successBlock:failureBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-createAvatarWithGender:faceImage:fixLandmarks:successBlock:failureBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)AVKAvatarCreator(im)createAvatarWithGender:faceImage:fixLandmarks:successBlock:failureBlock:">-createAvatarWithGender:faceImage:fixLandmarks:successBlock:failureBlock:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uploads image of face, that creates the avatar node.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">createAvatarWithGender</span><span class="p">:(</span><span class="n"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">)</span><span class="nv">gender</span>
+                     <span class="nf">faceImage</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIImage</span> <span class="o">*</span><span class="p">)</span><span class="nv">faceImage</span>
+                  <span class="nf">fixLandmarks</span><span class="p">:(</span><span class="n">nullable</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSValue</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">fixLandmarks</span>
+                  <span class="nf">successBlock</span><span class="p">:</span>
+                      <span class="p">(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n"><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">success</span>
+                  <span class="nf">failureBlock</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="n">NSError</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="nv">failure</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">createAvatar</span><span class="p">(</span><span class="n">with</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt"><a href="../Enums/AVKGender.html">AVKGender</a></span><span class="p">,</span> <span class="n">face</span> <span class="nv">faceImage</span><span class="p">:</span> <span class="kt">UIImage</span><span class="p">,</span> <span class="nv">fixLandmarks</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSValue</span><span class="p">]?,</span> <span class="n">successBlock</span> <span class="nv">success</span><span class="p">:</span> <span class="p">((</span><span class="kt"><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?,</span> <span class="n">failureBlock</span> <span class="nv">failure</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>gender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gender of avatar.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>faceImage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The image must contain a face. This face to occupy 80% of the image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fixLandmarks</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The landmarks for the face. You cannot pass any array. <code>fixLandmarks</code> must is based on <code><a href="../Classes/AVKAvatarCreator.html#/c:objc(cs)AVKAvatarCreator(im)getLandmarksWithFaceImage:successBlock:failureBlock:">-getLandmarksWithFaceImage:successBlock:failureBlock:</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute after the avatar get. The block has no return value. The block will be passed an <code><a href="../Classes/AVKAvatarController.html">AVKAvatarController</a></code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>failure</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The block to execute failure. The block will be passed an <code>NSError</code> object if the avatar could not be created.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="http://www.spe3d.co" target="_blank" rel="external">spe3d</a>. All rights reserved. (Last updated: 2017-10-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
