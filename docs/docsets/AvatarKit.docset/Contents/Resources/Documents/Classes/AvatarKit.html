@@ -92,6 +92,8 @@
               </div>
             <p>AvatarKit Base. Handles configuration and initialization of AvatarKit.</p>
 
+<p>AvatarKit 的基礎。處理 AvatarKit 的設定與初始化。</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -110,6 +112,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Returns the shared singleton AvatarKit instance.</p>
+
+<p>回傳 AvatarKit 共用的單一實例。</p>
 
                       </div>
                       <div class="declaration">
@@ -143,6 +147,8 @@
                       <div class="abstract">
                         <p>Project version string for AvatarKit.</p>
 
+<p>AvatarKit 當前的版號。</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -173,7 +179,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The AvatarKit API Key for this app</p>
+                        <p>The AvatarKit API Key for this app.</p>
+
+<p>回傳目前使用的 API 金鑰。</p>
 
                       </div>
                       <div class="declaration">
@@ -207,6 +215,8 @@
                       <div class="abstract">
                         <p>Unavailable. Use <code>+sharedInstance</code> to retrieve the shared AvatarKit instance.</p>
 
+<p>不可用。請改用 <code>+sharedInstance</code> 以取得 AvatarKit 的實例。</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -232,7 +242,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The recommended way to install <code>AvatarKit</code> into your APP is to place a call to <code>+startWithAPIKey:</code> in your <code>-application:didFinishLaunchingWithOptions:</code> or <code>-applicationDidFinishLaunching:</code> method.</p>
+                        <p>The recommended way to install AvatarKit into your APP is to place a call to <code>+startWithAPIKey:</code> in your <code>-application:didFinishLaunchingWithOptions:</code> method.</p>
+
+<p>使用 AvatarKit 前請在你的應用的 <code>-application:didFinishLaunchingWithOptions:</code> 內呼叫 <code>+startWithAPIKey:</code> ，
+以啟動 AvatarKit。</p>
 
                       </div>
                       <div class="declaration">
@@ -260,7 +273,8 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The AvatarKit API Key for this app</p>
+                                  <p>The AvatarKit API Key for this app.
+此應用所使用的 AvatarKit 的 API 金鑰。</p>
                                 </div>
                               </td>
                             </tr>
@@ -283,7 +297,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The recommended way to install beta of <code>AvatarKit</code> into your APP is to place a call to <code>+startWithAPIKey:onBetaServer:</code> in your <code>-application:didFinishLaunchingWithOptions:</code> or <code>-applicationDidFinishLaunching:</code> method.</p>
+                        <p>The recommended way to install beta of AvatarKit into your APP is to place a call to <code>+startWithAPIKey:onBetaServer:</code> in your <code>-application:didFinishLaunchingWithOptions:</code> method.</p>
+
+<p>使用 beta 版的 AvatarKit 前請在你的應用的 <code>-application:didFinishLaunchingWithOptions:</code> 內呼叫 <code>+startWithAPIKey:onBetaServer:</code> ，
+並指定 <code>betaMode</code> 為 <code>true</code>，
+以啟動 AvatarKit。</p>
 
                       </div>
                       <div class="declaration">
@@ -311,7 +329,8 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The AvatarKit API Key for this app</p>
+                                  <p>The AvatarKit API Key for this app.
+此應用所使用的 AvatarKit 的 API 金鑰。</p>
                                 </div>
                               </td>
                             </tr>
@@ -323,7 +342,8 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The AvatarKit use beta version on server.</p>
+                                  <p>The AvatarKit use beta version on server.
+是否要啟用 beta 版的 AvatarKit 伺服器。</p>
                                 </div>
                               </td>
                             </tr>
@@ -338,7 +358,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2017 <a class="link" href="http://www.spe3d.co" target="_blank" rel="external">spe3d</a>. All rights reserved. (Last updated: 2017-10-20)</p>
+          <p>&copy; 2017 <a class="link" href="http://www.spe3d.co" target="_blank" rel="external">spe3d</a>. All rights reserved. (Last updated: 2017-10-30)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

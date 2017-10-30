@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'AvatarKit'
-    s.version = '3.0.5'
+    s.version = '3.0.6'
 
     s.ios.deployment_target = '10.0'
 
